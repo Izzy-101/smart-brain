@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*this tells you which layer you want this to be in. -1 indicates that it will be below everything else*/
+  z-index: -1;
+}
