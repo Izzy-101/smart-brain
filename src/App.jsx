@@ -66,7 +66,7 @@ class App extends Component {
   //onPictureSubmit
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-      fetch('http://localhost:3001/imageurl', {
+      fetch('https://smart-brain-api-pytd.onrender.com/imageurl', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
@@ -76,7 +76,7 @@ class App extends Component {
       .then(response => response.json()) // Convert Clarifai response to JSON
       .then(response => {
         if(response) {
-          fetch('http://localhost:3001/image', {
+          fetch('https://smart-brain-api-pytd.onrender.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -133,10 +133,3 @@ class App extends Component {
 
 export default App;
 
-
-//This was for checking if the data was recieved when page is mounted 
-  // componentDidMount() {
-  //   fetch('http://localhost:3000/')
-  //     .then(response => response.json())
-  //     .then(console.log)
-  // }
