@@ -10,43 +10,7 @@ import Signin from './components/Signin/Signin';
 import Particles from 'particles-bg'
 
 
-// const setupClarifai = (imageUrl) => {
-//   // Your PAT (Personal Access Token) can be found in the Account's Security section
-//   const PAT = '4fface22e197469aa6bb7a00f5ab09e8';
-//   // Specify the correct user_id/app_id pairings
-//   // Since you're making inferences outside your app's scope
-//   const USER_ID = 'israa';       
-//   const APP_ID = 'my-first-application-dd42lf';
-//   // Change these to whatever model and image URL you want to use
-//   //const MODEL_ID = 'face-detection';    
-//   const IMAGE_URL = imageUrl;
 
-//   //Setting up the JSON that will be sent to Clarifai
-//   const raw = JSON.stringify({
-//     "user_app_id": {
-//         "user_id": USER_ID,
-//         "app_id": APP_ID
-//     },
-//     "inputs": [
-//         {
-//             "data": {
-//                 "image": {
-//                     "url": IMAGE_URL
-//                 }
-//             }
-//         }
-//     ]
-//   });
-//   const requestOptions = {
-//       method: 'POST',
-//       headers: {
-//           'Accept': 'application/json',
-//           'Authorization': 'Key ' + PAT
-//       },
-//       body: raw
-//   };
-//   return requestOptions
-// } 
 
 const initialState = {
     input: '',
